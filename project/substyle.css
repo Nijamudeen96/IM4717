@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+}
+.container {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto 50px;
+    grid-template-areas: "header"
+                        "content"
+                        "footer";
+}
+header {
+    background-color: #000000;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+li {
+    float: left;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+li a {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    font-family: arial;
+    text-decoration: none;
+    font-size: 14px;
+}
+li a:link {
+    color: #ffffff;
+}
+li a:visited {
+    color: #ffffff;
+}
+#order {
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+}
+@font-face {
+    font-family: 'hamburger';
+    src: url(fonts/HamburgerHeavenNF.ttf);
+}
+.content {
+    grid-area: content;
+    min-height: 600px;
+}
+#title {
+    font-family: 'hamburger';
+    font-size: 40px;
+    padding-top: 10px;
+    margin-left: 10%;
+}
+footer {
+    background-color: #000000;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    font-family: arial;
+ }
+/*CSS for menu.html*/
+.menu {
+    list-style-type: none;
+    padding: 20px 5% 0 0;
+    margin: 0 auto;
+    height: 100%;
+}
+.menu-item {
+    width: 70%;
+    list-style-type: none;
+    margin-left: 20%;
+    display: flex;
+}
+.food {
+    width: 40%;
+}
+.info {
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.item {
+    margin: 0;
+    font-size: 16px;
+    width: 200px;
+    float: left;
+}
+.price {
+    width: 50px;
+    float: right;
+}
+/*CSS for location.html*/
+.address {
+    margin-left: 20%;
+    padding-top: 30px;
+}
+#map {
+    display: flex;
+}
+#googlemap {
+    margin-left: 5%;
+}
