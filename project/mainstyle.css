@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+}
+/*Grid arrangement for Homepage*/
+.container {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 600px 500px 500px 50px;
+    grid-template-areas: "header"
+                        "content1"
+                        "content2"
+                        "content3"
+                        "footer";
+}
+header {
+    background-color: #000000;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+li {
+    float: left;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+li a {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    font-family: arial;
+    text-decoration: none;
+    font-size: 14px;
+}
+li a:link {
+    color: #ffffff;
+}
+li a:visited {
+    color: #ffffff;
+}
+#order {
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+}
+@font-face {
+    font-family: 'hamburger';
+    src: url(fonts/HamburgerHeavenNF.ttf);
+}
+.content1 {
+    grid-area: content1;
+    background: linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)),url(images/burgers1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#heading {
+    font-family: 'hamburger';
+    font-size: 90px;
+    color: #000000;
+    margin-left: 200px;
+    margin-top: 50px;
+    width: 550px;
+    float: left;
+    overflow: hidden;
+    display: inline;
+}
+#orderbutton {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    width: 160px;
+    padding: 10px 15px 10px 15px;
+    border: 3px solid #000000;
+    border-radius: 8px;
+    height: 34px;
+    overflow: hidden;
+    color: #000000;
+    display: inline-block;
+    margin-top: 200px;
+}
+#orderbutton:link {
+    text-decoration: none;
+}
+#orderbutton:visited {
+    color: #000000;
+}
+.content2 {
+    grid-area: content2;
+    align-content: center;
+}
+#aboutus {
+    font-family: 'hamburger';
+    font-size: 60px;
+    margin-left: 42.5%;
+    margin-top: 50px;
+}
+#about {
+    width: 600px;
+    margin-left: 27.5%;
+    font-size: 25px;
+}
+.content3 {
+    grid-area: content3;
+}
+footer {
+   background-color: #000000;
+   padding-left: 15px;
+   padding-top: 15px;
+   color: #ffffff;
+   font-family: arial;
+}
